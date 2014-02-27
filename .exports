@@ -1,0 +1,14 @@
+export EDITOR=vim
+export BROWSER=firefox
+
+if type konsole > /dev/null; then
+	export TERMINAL=konsole
+elif type gnome-terminal > /dev/null; then
+	export TERMINAL=gnome-terminal
+fi
+
+# Gtk themes 
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+
+export NVM_DIR=~/.nvm
+export GIT_EDITOR=vim

@@ -1,0 +1,57 @@
+# Start an HTTP server from a directory, optionally specifying the port
+function server() {
+	local port="${1:-8000}"
+
+	#open "http://localhost:${port}/"
+	#xdg-open "http://localhost:${port}/"
+	
+	python -m http.server $port
+}
+
+function phpServer {
+	local port="${1:-8000}"
+	php -S 127.0.0.1:$port
+}
+
+# Create a new directory and enter it
+function md() {
+	mkdir -p "$@" && cd "$@"
+}
+
+# Syntax-highlight JSON strings or files
+function json() {
+	if [ -p /dev/stdin ]; then
+		# piping, e.g. `echo '{"foo":42}' | json`
+		python -mjson.tool | pygmentize -l javascript
+	else
+		# e.g. `json '{"foo":42}'`
+		python -mjson.tool <<< "$*" | pygmentize -l javascript
+	fi
+}
+
+function btcprice() {
+     echo BTC $`curl https://mtgox.com/api/0/data/ticker.php 2>&1 /dev/null | egrep -o '"avg":[0-9]+(\.)?([0-9]{0,2})?' | sed 's/"avg"://'`
+}
+
+
+# Copy w/ progress
+cp_p () {
+	rsync -WavP --human-readable --progress $1 $2
+}
+
+# Syntax-highlight JSON strings or files
+function json() {
+	if [ -p /dev/stdin ]; then
+ 		#piping, e.g. `echo '{"foo":42}' | json`
+ 		python -mjson.tool | pygmentize -l javascript
+ 	else
+ 		# e.g. `json '{"foo":42}'`
+ 		python -mjson.tool <<< "$*" | pygmentize -l javascript
+ 	fi
+}
+
+# take this repo and copy it to somewhere else minus the .git stuff.
+function gitexport(){
+	mkdir -p "$1"
+	git archive master | tar -x -C "$1"
+}
