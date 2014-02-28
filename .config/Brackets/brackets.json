@@ -1,0 +1,11 @@
+{
+    "brackets-git.extensionDirectory": "/home/davidg/.config/Brackets/extensions/user/zaggino.brackets-git/",
+    "linting.enabled": true,
+    "brackets-git.panelEnabled": false,
+    "brackets-git.lastVersion": "0.9.3",
+    "useTabChar": true,
+    "styleActiveLine": true,
+    "linting.collapsed": true,
+    "closeBrackets": true,
+    "tabSize": 4
+}

@@ -1,0 +1,17 @@
+[
+	{"keys": ["ctrl+b"], "command": "toggle_side_bar" },
+	
+	{ "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+
+	{ "keys": [""], "command": "swap_line_up" },
+	{ "keys": [""], "command": "swap_line_down" },
+	 
+	{ "keys": ["ctrl+up"], "command": "new_pane" },
+	{ "keys": ["ctrl+shift+up"], "command": "new_pane", "args": {"move": false} },
+	{ "keys": ["ctrl+down"], "command": "close_pane" },
+	{ "keys": ["ctrl+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+right"], "command": "focus_neighboring_group" },
+	{ "keys": ["ctrl+shift+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+shift+right"], "command": "move_to_neighboring_group" },
+]
+	

@@ -1,0 +1,20 @@
+{
+	"breaks":
+	{
+		"/home/davidg/Desktop/wi-test/app.js":
+		{
+			"3":
+			{
+				"status": "disabled"
+			}
+		},
+		"/home/davidg/Desktop/wi-test/index.html":
+		{
+		}
+	},
+	"chrome_path":
+	{
+		"linux": "/usr/bin/chromium-browser"
+	},
+	"chrome_remote_port": "9222"
+}

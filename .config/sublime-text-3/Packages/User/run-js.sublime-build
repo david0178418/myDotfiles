@@ -1,0 +1,5 @@
+{
+    "cmd": ["command", "argument", "--flag"],
+    "shell": "server",
+    "working_dir": "${project_path}"
+}

@@ -1,0 +1,10 @@
+{
+	"sublimelinter_executable_map":
+    {
+        "javascript": "/home/davidg/.nvm//v0.10.22/bin/node"
+    },
+    "sublimelinter_delay": 1,
+    "sublimelinter_gutter_marks": true,
+
+    "sublimelinter_gutter_marks_theme": "dark"
+}
