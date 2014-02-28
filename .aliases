@@ -17,3 +17,6 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias fucking='sudo'
+
+# Node 'http-server' alias...becasuse I'm lazy
+alias server='http-server'
