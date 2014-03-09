@@ -20,3 +20,4 @@ alias fucking='sudo'
 
 # Node 'http-server' alias...becasuse I'm lazy
 alias server='http-server'
+alias findProcess='ps -aux | grep'
